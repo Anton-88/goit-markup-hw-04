@@ -16,26 +16,31 @@
 <body>
     <header class="header-text">
         <div class="container main-container">
-            <nav class="navigation">
-                <a class="link main-site-name main-site-flex" lang="en" href=""><span
-                        class="main-site-subname">Web</span>Studio</a>
-                <ul class="list">
-                    <li class="menu menu-item"><a class="link header-link" href="./index.html">Студия</a></li>
-                    <li class="menu menu-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="menu menu-item"><a class="link header-link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="list navigation-contact">
-                <li class="menu-item navigation-item"><a class="link header-link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="menu-item navigation-item"><a class="link header-link" href="tel:+380961111111">+38 096 111
-                        11 11</a>
-                </li>
+          <nav class="navigation">
+            <a class="link main-site-name main-site-flex" lang="en" href=""><span
+                class="main-site-subname">Web</span>Studio</a>
+            <ul class="list">
+              <li class="menu menu-item"><a class="link header-link" href="./index.html">Студия</a></li>
+              <li class="menu menu-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
+              <li class="menu menu-item"><a class="link header-link" href="">Контакты</a></li>
             </ul>
+          </nav>
+          <ul class="list navigation-contact">
+            <li class="navigation-item"><a class="link header-link" href="mailto:info@devstudio.com">
+                <svg class="icon" width="16" , height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="navigation-item"><a class="link header-link" href="tel:+380961111111">
+                <svg class="icon" width="10" , height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </header>
 
     <main>
         <section class="portfolio-section">
@@ -146,22 +151,55 @@
     </main>
 
     <footer class="footer footer-text-color">
-        <div class="container">
+        <div class="container footer-container">
+          <div class="footer-contacts">
             <a class="link main-site-name-footer" lang="en" href=""><span class="main-site-subname">Web</span>Studio</a>
             <address class="flex-address">
-                <ul class="list">
-                    <li class="footer-item">
-                        <a class="link footer-address-color" href="https://goo.gl/maps/DzhFfoEovejw2ryV9"
-                            target="_blank" rel="noopener noreferrer">г.Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="footer-item"><a class="link footer-link"
-                            href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer-item"><a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
+              <ul class="list">
+                <li class="footer-item">
+                  <a class="link footer-address-color" href="https://goo.gl/maps/DzhFfoEovejw2ryV9" target="_blank"
+                    rel="noopener noreferrer">г.Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer-item"><a class="link footer-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="footer-item"><a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              </ul>
             </address>
+          </div>
+          <div class="footer-socials">
+            <h2 class="footer-join-section">Присоединяйтесь</h2>
+            <ul class="list social-icons">
+              <li class="social-icons-item footer-social-icons">
+                <a aria-label="Instagram" href="" class="social-icons-link" target="_blank" rel="moopener norefferrer">
+                  <svg class="icon" width="20" , height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item footer-social-icons">
+                <a aria-label="Twitter" href="" class="social-icons-link" target="_blank" rel="moopener norefferrer">
+                  <svg class="icon" width="20" , height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item footer-social-icons">
+                <a aria-label="Facebook" href="" class="social-icons-link" target="_blank" rel="moopener norefferrer">
+                  <svg class="icon" width="20" , height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item footer-social-icons">
+                <a aria-label="LinkedIn" href="" class="social-icons-link" target="_blank" rel="moopener norefferrer">
+                  <svg class="icon" width="20" , height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </footer>
 </body>
 
 </html>

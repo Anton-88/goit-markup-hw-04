@@ -250,6 +250,7 @@ address {
 .navigation-contact {
   display: flex;
   align-items: center;
+  color: var(--main-text-color);
 }
 
 .navigation-item:first-child {
@@ -368,12 +369,6 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-img-item {
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px; */
-}
-
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
@@ -444,11 +439,8 @@ address {
   display: inline-flex;
   flex-wrap: nowrap;
   --grid-item: 6;
-  /* flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item)); */
   margin-left: 30px;
   margin-top: 30px;
-  /* border: 1px solid var(--social-icons-color);
-  border-radius: 4px; */
   justify-content: center;
   align-items: center;
 }
@@ -470,9 +462,6 @@ address {
 .customers-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-.customers-link .icon {
 }
 
 /* Portfolio */
@@ -537,14 +526,12 @@ address {
 }
 
 .footer-join-section {
-  /* font-family: Roboto; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pure-white-color);
-
   margin-bottom: 20px;
 }
 
@@ -574,4 +561,10 @@ address {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+}
+
+.social-icons-item .social-icons-link:hover,
+.social-icons-item .social-icons-link:focus {
+  fill: var(--pure-white-color);
+  background-color: var(--accent-color);
 }
