@@ -16,7 +16,6 @@
 
 html {
   box-sizing: border-box;
-  /* max-width: 1600px; */
 }
 
 *,
@@ -100,7 +99,8 @@ address {
   margin: 0;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--pure-white-color);
   background-color: var(--accent-color);
 }
@@ -136,7 +136,9 @@ address {
 }
 
 .header-link {
-  padding: 15px 0;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
 }
 
 .header-link:hover .icon,
@@ -146,9 +148,10 @@ address {
 
 .hero {
   background-color: var(--footer-bg-color);
-  margin-left: 0;
-  margin-right: 0;
-  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
   background: linear-gradient(
       180deg,
       rgba(47, 48, 58, 0.4),
@@ -157,12 +160,12 @@ address {
     url(../images/hero/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-container {
   padding: 200px 0;
   text-align: center;
-  /* min-height: 100vh; */
 }
 
 .hero-button {
@@ -250,27 +253,22 @@ address {
 .navigation-contact {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--main-text-color);
+}
+
+.navigation-item .icon {
+  fill: var(--main-text-color);
+  margin-right: 10px;
 }
 
 .navigation-item:first-child {
   margin-right: 30px;
 }
 
-/* .navigation-item:first-child .icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.navigation-item:last-child .icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-} */
-
-.navigation-item .icon {
-  margin-right: 10px;
+.navigation-item {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -280,10 +278,6 @@ address {
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .menu-item:first-child {
-  margin-right: 50px;
-} */
 
 /* Our advantages section */
 .our-advantages {
@@ -435,10 +429,14 @@ address {
   padding: 94px 0;
 }
 
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .customers-item {
-  display: inline-flex;
-  flex-wrap: nowrap;
   --grid-item: 6;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
   justify-content: center;
@@ -446,13 +444,11 @@ address {
 }
 
 .customers-link {
-  display: inline-flex;
+  display: flex;
   fill: var(--social-icons-color);
   flex-basis: content;
   align-items: center;
   justify-content: center;
-  width: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  width: 170px;
   height: 90px;
   border: 1px solid var(--social-icons-color);
   border-radius: 4px;
@@ -494,6 +490,17 @@ address {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-item-example:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-grid .button:hover,
+.portfolio-grid .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Footer */
@@ -541,6 +548,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container > div {
